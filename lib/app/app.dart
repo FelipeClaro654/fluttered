@@ -17,7 +17,7 @@ import 'package:my_first_app/ui/views/counter/counter_view.dart';
   dependencies: [
     LazySingleton(classType: BottomSheetService),
     LazySingleton(classType: DialogService),
-    LazySingleton(classType: NavigationService),
+    LazySingleton(classType: RouterService),
     // @stacked-service
   ],
   bottomsheets: [

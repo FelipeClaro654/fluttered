@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-
 import 'counter_viewmodel.dart';
 
 class CounterView extends StackedView<CounterViewModel> {
@@ -16,6 +15,10 @@ class CounterView extends StackedView<CounterViewModel> {
       backgroundColor: Colors.amber,
       body: Container(
         padding: const EdgeInsets.only(left: 25.0, right: 25.0),
+        child: RawMaterialButton(
+          onPressed: viewModel.runStartupLogic,
+          child: const Text('alabama'),
+        ),
       ),
     );
   }
@@ -25,4 +28,8 @@ class CounterView extends StackedView<CounterViewModel> {
     BuildContext context,
   ) =>
       CounterViewModel();
+
+  //       @override
+  // void onViewModelReady(CounterViewModel viewModel) => SchedulerBinding.instance
+  //     .addPostFrameCallback((timeStamp) => viewModel.runStartupLogic());
 }
