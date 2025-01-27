@@ -6,7 +6,8 @@ import 'package:my_first_app/ui/common/ui_helpers.dart';
 import 'home_viewmodel.dart';
 
 class HomeView extends StackedView<HomeViewModel> {
-  const HomeView({Key? key}) : super(key: key);
+  final int startingIndex;
+  const HomeView({Key? key, required this.startingIndex}) : super(key: key);
 
   @override
   Widget builder(

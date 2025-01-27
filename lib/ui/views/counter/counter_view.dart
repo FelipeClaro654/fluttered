@@ -13,7 +13,7 @@ class CounterView extends StackedView<CounterViewModel> {
     Widget? child,
   ) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Colors.amber,
       body: Container(
         padding: const EdgeInsets.only(left: 25.0, right: 25.0),
       ),
